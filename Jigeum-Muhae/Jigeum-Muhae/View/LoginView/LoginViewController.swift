@@ -21,10 +21,10 @@ class LoginViewController: UIViewController {
     }
     
     func bindRx() {
+        // TODO: 로그인 로직 처리 필요
         loginButton.rx.tap.bind { _ in
             if let PhoneCertification = UIStoryboard.viewController(storyboardName: "PhoneCertificationViewController") as? PhoneCertificationViewController {
                 self.navigationController?.pushViewController(PhoneCertification, animated: true)
-                print("왔다 감")
             }
         }.disposed(by: disposBag)
     }
