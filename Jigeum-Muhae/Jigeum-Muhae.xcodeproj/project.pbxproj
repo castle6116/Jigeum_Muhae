@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		66AFEF0D98D67DD1A7900325 /* Pods_Jigeum_Muhae.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 617821A5026B63B6C1AE663F /* Pods_Jigeum_Muhae.framework */; };
+		DE5F7E0428DB024F00EE72BF /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = DE5F7DFB28DB024F00EE72BF /* Pretendard-Medium.otf */; };
+		DE5F7E0528DB024F00EE72BF /* Pretendard-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = DE5F7DFC28DB024F00EE72BF /* Pretendard-ExtraLight.otf */; };
+		DE5F7E0628DB024F00EE72BF /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DE5F7DFD28DB024F00EE72BF /* Pretendard-Bold.otf */; };
+		DE5F7E0728DB024F00EE72BF /* Pretendard-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DE5F7DFE28DB024F00EE72BF /* Pretendard-ExtraBold.otf */; };
+		DE5F7E0828DB024F00EE72BF /* Pretendard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = DE5F7DFF28DB024F00EE72BF /* Pretendard-Light.otf */; };
+		DE5F7E0928DB024F00EE72BF /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = DE5F7E0028DB024F00EE72BF /* Pretendard-Black.otf */; };
+		DE5F7E0A28DB024F00EE72BF /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = DE5F7E0128DB024F00EE72BF /* Pretendard-Regular.otf */; };
+		DE5F7E0B28DB024F00EE72BF /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DE5F7E0228DB024F00EE72BF /* Pretendard-SemiBold.otf */; };
+		DE5F7E0C28DB024F00EE72BF /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = DE5F7E0328DB024F00EE72BF /* Pretendard-Thin.otf */; };
+		DE60909428DAFBC5002D26B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE60909328DAFBC5002D26B5 /* AppDelegate.swift */; };
+		DE60909628DAFBC5002D26B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE60909528DAFBC5002D26B5 /* SceneDelegate.swift */; };
+		DE60909B28DAFBC5002D26B5 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE60909928DAFBC5002D26B5 /* LoginViewController.storyboard */; };
+		DE60909D28DAFBC6002D26B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE60909C28DAFBC6002D26B5 /* Assets.xcassets */; };
+		DE6090A028DAFBC6002D26B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE60909E28DAFBC6002D26B5 /* LaunchScreen.storyboard */; };
+		DECB41A228DB0C2B00025779 /* PhoneCertificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECB41A128DB0C2B00025779 /* PhoneCertificationViewController.swift */; };
+		DECB41A428DB0C3700025779 /* PhoneCertificationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DECB41A328DB0C3700025779 /* PhoneCertificationViewController.storyboard */; };
+		DECB41A628DB12B200025779 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECB41A528DB12B200025779 /* LoginViewController.swift */; };
+		DECB41A828DB13F300025779 /* UIStoryBoard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECB41A728DB13F300025779 /* UIStoryBoard+Extension.swift */; };
+		DED429F828DB03B4001C24A7 /* Pretendard-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DED429EF28DB03B4001C24A7 /* Pretendard-Thin.ttf */; };
+		DED429F928DB03B4001C24A7 /* Pretendard-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DED429F028DB03B4001C24A7 /* Pretendard-ExtraLight.ttf */; };
+		DED429FA28DB03B4001C24A7 /* Pretendard-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DED429F128DB03B4001C24A7 /* Pretendard-ExtraBold.ttf */; };
+		DED429FB28DB03B4001C24A7 /* Pretendard-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DED429F228DB03B4001C24A7 /* Pretendard-Black.ttf */; };
+		DED429FC28DB03B4001C24A7 /* Pretendard-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DED429F328DB03B4001C24A7 /* Pretendard-Medium.ttf */; };
+		DED429FD28DB03B4001C24A7 /* Pretendard-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DED429F428DB03B4001C24A7 /* Pretendard-Bold.ttf */; };
+		DED429FE28DB03B4001C24A7 /* Pretendard-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DED429F528DB03B4001C24A7 /* Pretendard-SemiBold.ttf */; };
+		DED429FF28DB03B4001C24A7 /* Pretendard-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DED429F628DB03B4001C24A7 /* Pretendard-Light.ttf */; };
+		DED42A0028DB03B4001C24A7 /* Pretendard-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DED429F728DB03B4001C24A7 /* Pretendard-Regular.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		133A0A7CBFB1322196893D88 /* Pods-Jigeum-Muhae.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jigeum-Muhae.release.xcconfig"; path = "Target Support Files/Pods-Jigeum-Muhae/Pods-Jigeum-Muhae.release.xcconfig"; sourceTree = "<group>"; };
+		617821A5026B63B6C1AE663F /* Pods_Jigeum_Muhae.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jigeum_Muhae.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6C381894A3C893478C605A0 /* Pods-Jigeum-Muhae.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jigeum-Muhae.debug.xcconfig"; path = "Target Support Files/Pods-Jigeum-Muhae/Pods-Jigeum-Muhae.debug.xcconfig"; sourceTree = "<group>"; };
+		DE5F7DFB28DB024F00EE72BF /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
+		DE5F7DFC28DB024F00EE72BF /* Pretendard-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraLight.otf"; sourceTree = "<group>"; };
+		DE5F7DFD28DB024F00EE72BF /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
+		DE5F7DFE28DB024F00EE72BF /* Pretendard-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraBold.otf"; sourceTree = "<group>"; };
+		DE5F7DFF28DB024F00EE72BF /* Pretendard-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Light.otf"; sourceTree = "<group>"; };
+		DE5F7E0028DB024F00EE72BF /* Pretendard-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.otf"; sourceTree = "<group>"; };
+		DE5F7E0128DB024F00EE72BF /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
+		DE5F7E0228DB024F00EE72BF /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
+		DE5F7E0328DB024F00EE72BF /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.otf"; sourceTree = "<group>"; };
+		DE60909028DAFBC5002D26B5 /* Jigeum-Muhae.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jigeum-Muhae.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE60909328DAFBC5002D26B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DE60909528DAFBC5002D26B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DE60909A28DAFBC5002D26B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LoginViewController.storyboard; sourceTree = "<group>"; };
+		DE60909C28DAFBC6002D26B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE60909F28DAFBC6002D26B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DE6090A128DAFBC6002D26B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DECB41A128DB0C2B00025779 /* PhoneCertificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneCertificationViewController.swift; sourceTree = "<group>"; };
+		DECB41A328DB0C3700025779 /* PhoneCertificationViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhoneCertificationViewController.storyboard; sourceTree = "<group>"; };
+		DECB41A528DB12B200025779 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DECB41A728DB13F300025779 /* UIStoryBoard+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryBoard+Extension.swift"; sourceTree = "<group>"; };
+		DED429EF28DB03B4001C24A7 /* Pretendard-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.ttf"; sourceTree = "<group>"; };
+		DED429F028DB03B4001C24A7 /* Pretendard-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraLight.ttf"; sourceTree = "<group>"; };
+		DED429F128DB03B4001C24A7 /* Pretendard-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraBold.ttf"; sourceTree = "<group>"; };
+		DED429F228DB03B4001C24A7 /* Pretendard-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.ttf"; sourceTree = "<group>"; };
+		DED429F328DB03B4001C24A7 /* Pretendard-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.ttf"; sourceTree = "<group>"; };
+		DED429F428DB03B4001C24A7 /* Pretendard-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.ttf"; sourceTree = "<group>"; };
+		DED429F528DB03B4001C24A7 /* Pretendard-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.ttf"; sourceTree = "<group>"; };
+		DED429F628DB03B4001C24A7 /* Pretendard-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Light.ttf"; sourceTree = "<group>"; };
+		DED429F728DB03B4001C24A7 /* Pretendard-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE60908D28DAFBC5002D26B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66AFEF0D98D67DD1A7900325 /* Pods_Jigeum_Muhae.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B1CA53AD6140C4C71FD0BB5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C6C381894A3C893478C605A0 /* Pods-Jigeum-Muhae.debug.xcconfig */,
+				133A0A7CBFB1322196893D88 /* Pods-Jigeum-Muhae.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DE12FAF128DB032E00D0F4F9 /* otf */ = {
+			isa = PBXGroup;
+			children = (
+				DE5F7E0028DB024F00EE72BF /* Pretendard-Black.otf */,
+				DE5F7DFD28DB024F00EE72BF /* Pretendard-Bold.otf */,
+				DE5F7DFE28DB024F00EE72BF /* Pretendard-ExtraBold.otf */,
+				DE5F7DFC28DB024F00EE72BF /* Pretendard-ExtraLight.otf */,
+				DE5F7DFF28DB024F00EE72BF /* Pretendard-Light.otf */,
+				DE5F7DFB28DB024F00EE72BF /* Pretendard-Medium.otf */,
+				DE5F7E0128DB024F00EE72BF /* Pretendard-Regular.otf */,
+				DE5F7E0228DB024F00EE72BF /* Pretendard-SemiBold.otf */,
+				DE5F7E0328DB024F00EE72BF /* Pretendard-Thin.otf */,
+			);
+			path = otf;
+			sourceTree = "<group>";
+		};
+		DE12FAF228DB033F00D0F4F9 /* ttf */ = {
+			isa = PBXGroup;
+			children = (
+				DED429F228DB03B4001C24A7 /* Pretendard-Black.ttf */,
+				DED429F428DB03B4001C24A7 /* Pretendard-Bold.ttf */,
+				DED429F128DB03B4001C24A7 /* Pretendard-ExtraBold.ttf */,
+				DED429F028DB03B4001C24A7 /* Pretendard-ExtraLight.ttf */,
+				DED429F628DB03B4001C24A7 /* Pretendard-Light.ttf */,
+				DED429F328DB03B4001C24A7 /* Pretendard-Medium.ttf */,
+				DED429F728DB03B4001C24A7 /* Pretendard-Regular.ttf */,
+				DED429F528DB03B4001C24A7 /* Pretendard-SemiBold.ttf */,
+				DED429EF28DB03B4001C24A7 /* Pretendard-Thin.ttf */,
+			);
+			path = ttf;
+			sourceTree = "<group>";
+		};
+		DE3CC54028DAFFB30041E5E7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DECB41A728DB13F300025779 /* UIStoryBoard+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DE5F7DE828DB010D00EE72BF /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				DE12FAF228DB033F00D0F4F9 /* ttf */,
+				DE12FAF128DB032E00D0F4F9 /* otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		DE60908728DAFBC5002D26B5 = {
+			isa = PBXGroup;
+			children = (
+				DE60909228DAFBC5002D26B5 /* Jigeum-Muhae */,
+				DE60909128DAFBC5002D26B5 /* Products */,
+				1B1CA53AD6140C4C71FD0BB5 /* Pods */,
+				FCA267978CC49987E17A6E28 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DE60909128DAFBC5002D26B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE60909028DAFBC5002D26B5 /* Jigeum-Muhae.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE60909228DAFBC5002D26B5 /* Jigeum-Muhae */ = {
+			isa = PBXGroup;
+			children = (
+				DE6090A928DAFBE6002D26B5 /* Model */,
+				DE6090A728DAFBE2002D26B5 /* ViewModel */,
+				DE6090A828DAFBE4002D26B5 /* View */,
+				DE6090AA28DAFC23002D26B5 /* Delegate */,
+				DE3CC54028DAFFB30041E5E7 /* Extensions */,
+				DE6090AC28DAFC48002D26B5 /* ImageAsset */,
+				DE5F7DE828DB010D00EE72BF /* Font */,
+				DE60909E28DAFBC6002D26B5 /* LaunchScreen.storyboard */,
+				DE6090A128DAFBC6002D26B5 /* Info.plist */,
+			);
+			path = "Jigeum-Muhae";
+			sourceTree = "<group>";
+		};
+		DE6090A728DAFBE2002D26B5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DE6090A828DAFBE4002D26B5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DECB41A028DB0BF100025779 /* PhoneCertificationView */,
+				DECB419F28DB0BE300025779 /* LoginView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE6090A928DAFBE6002D26B5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE6090AA28DAFC23002D26B5 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				DE60909328DAFBC5002D26B5 /* AppDelegate.swift */,
+				DE60909528DAFBC5002D26B5 /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		DE6090AC28DAFC48002D26B5 /* ImageAsset */ = {
+			isa = PBXGroup;
+			children = (
+				DE60909C28DAFBC6002D26B5 /* Assets.xcassets */,
+			);
+			path = ImageAsset;
+			sourceTree = "<group>";
+		};
+		DECB419F28DB0BE300025779 /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				DECB41A528DB12B200025779 /* LoginViewController.swift */,
+				DE60909928DAFBC5002D26B5 /* LoginViewController.storyboard */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+		DECB41A028DB0BF100025779 /* PhoneCertificationView */ = {
+			isa = PBXGroup;
+			children = (
+				DECB41A128DB0C2B00025779 /* PhoneCertificationViewController.swift */,
+				DECB41A328DB0C3700025779 /* PhoneCertificationViewController.storyboard */,
+			);
+			path = PhoneCertificationView;
+			sourceTree = "<group>";
+		};
+		FCA267978CC49987E17A6E28 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				617821A5026B63B6C1AE663F /* Pods_Jigeum_Muhae.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE60908F28DAFBC5002D26B5 /* Jigeum-Muhae */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE6090A428DAFBC6002D26B5 /* Build configuration list for PBXNativeTarget "Jigeum-Muhae" */;
+			buildPhases = (
+				F7C8216DB1BA2DFEEEB40E2E /* [CP] Check Pods Manifest.lock */,
+				DE60908C28DAFBC5002D26B5 /* Sources */,
+				DE60908D28DAFBC5002D26B5 /* Frameworks */,
+				DE60908E28DAFBC5002D26B5 /* Resources */,
+				85B546E8D6615869F5B62813 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Jigeum-Muhae";
+			productName = "Jigeum-Muhae";
+			productReference = DE60909028DAFBC5002D26B5 /* Jigeum-Muhae.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE60908828DAFBC5002D26B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					DE60908F28DAFBC5002D26B5 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = DE60908B28DAFBC5002D26B5 /* Build configuration list for PBXProject "Jigeum-Muhae" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DE60908728DAFBC5002D26B5;
+			productRefGroup = DE60909128DAFBC5002D26B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE60908F28DAFBC5002D26B5 /* Jigeum-Muhae */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE60908E28DAFBC5002D26B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DED429FC28DB03B4001C24A7 /* Pretendard-Medium.ttf in Resources */,
+				DE5F7E0B28DB024F00EE72BF /* Pretendard-SemiBold.otf in Resources */,
+				DE6090A028DAFBC6002D26B5 /* LaunchScreen.storyboard in Resources */,
+				DE5F7E0828DB024F00EE72BF /* Pretendard-Light.otf in Resources */,
+				DED429FD28DB03B4001C24A7 /* Pretendard-Bold.ttf in Resources */,
+				DED429FB28DB03B4001C24A7 /* Pretendard-Black.ttf in Resources */,
+				DE5F7E0C28DB024F00EE72BF /* Pretendard-Thin.otf in Resources */,
+				DED429F828DB03B4001C24A7 /* Pretendard-Thin.ttf in Resources */,
+				DED42A0028DB03B4001C24A7 /* Pretendard-Regular.ttf in Resources */,
+				DE5F7E0628DB024F00EE72BF /* Pretendard-Bold.otf in Resources */,
+				DE5F7E0728DB024F00EE72BF /* Pretendard-ExtraBold.otf in Resources */,
+				DE5F7E0928DB024F00EE72BF /* Pretendard-Black.otf in Resources */,
+				DE60909D28DAFBC6002D26B5 /* Assets.xcassets in Resources */,
+				DECB41A428DB0C3700025779 /* PhoneCertificationViewController.storyboard in Resources */,
+				DE5F7E0528DB024F00EE72BF /* Pretendard-ExtraLight.otf in Resources */,
+				DED429FE28DB03B4001C24A7 /* Pretendard-SemiBold.ttf in Resources */,
+				DE5F7E0A28DB024F00EE72BF /* Pretendard-Regular.otf in Resources */,
+				DED429F928DB03B4001C24A7 /* Pretendard-ExtraLight.ttf in Resources */,
+				DED429FA28DB03B4001C24A7 /* Pretendard-ExtraBold.ttf in Resources */,
+				DE60909B28DAFBC5002D26B5 /* LoginViewController.storyboard in Resources */,
+				DED429FF28DB03B4001C24A7 /* Pretendard-Light.ttf in Resources */,
+				DE5F7E0428DB024F00EE72BF /* Pretendard-Medium.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		85B546E8D6615869F5B62813 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Jigeum-Muhae/Pods-Jigeum-Muhae-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Jigeum-Muhae/Pods-Jigeum-Muhae-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Jigeum-Muhae/Pods-Jigeum-Muhae-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7C8216DB1BA2DFEEEB40E2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Jigeum-Muhae-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE60908C28DAFBC5002D26B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DECB41A628DB12B200025779 /* LoginViewController.swift in Sources */,
+				DE60909428DAFBC5002D26B5 /* AppDelegate.swift in Sources */,
+				DECB41A228DB0C2B00025779 /* PhoneCertificationViewController.swift in Sources */,
+				DE60909628DAFBC5002D26B5 /* SceneDelegate.swift in Sources */,
+				DECB41A828DB13F300025779 /* UIStoryBoard+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DE60909928DAFBC5002D26B5 /* LoginViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE60909A28DAFBC5002D26B5 /* Base */,
+			);
+			name = LoginViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		DE60909E28DAFBC6002D26B5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE60909F28DAFBC6002D26B5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DE6090A228DAFBC6002D26B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DE6090A328DAFBC6002D26B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE6090A528DAFBC6002D26B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6C381894A3C893478C605A0 /* Pods-Jigeum-Muhae.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 882B4FP598;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Jigeum-Muhae/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = LoginViewController;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kimjinwoo.Jigeum-Muhae";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DE6090A628DAFBC6002D26B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 133A0A7CBFB1322196893D88 /* Pods-Jigeum-Muhae.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 882B4FP598;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Jigeum-Muhae/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = LoginViewController;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kimjinwoo.Jigeum-Muhae";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE60908B28DAFBC5002D26B5 /* Build configuration list for PBXProject "Jigeum-Muhae" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE6090A228DAFBC6002D26B5 /* Debug */,
+				DE6090A328DAFBC6002D26B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE6090A428DAFBC6002D26B5 /* Build configuration list for PBXNativeTarget "Jigeum-Muhae" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE6090A528DAFBC6002D26B5 /* Debug */,
+				DE6090A628DAFBC6002D26B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE60908828DAFBC5002D26B5 /* Project object */;
+}

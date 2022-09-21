@@ -1,0 +1,18 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Jigeum-Muhae' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Jigeum-Muhae
+  pod 'Alamofire'
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'RxDataSources'
+  pod 'YYImage'
+  pod 'SwiftLint'
+  pod 'Kingfisher'
+  pod 'SnapKit'
+
+end

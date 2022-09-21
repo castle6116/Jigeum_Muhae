@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Pretendard-Bold.otf">
+            <string>Pretendard-Bold</string>
+        </array>
+        <array key="Pretendard-Regular.ttf">
+            <string>Pretendard-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Phone Certification View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="PhoneCertificationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="PhoneCertificationViewController" customModule="Jigeum_Muhae" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="전화번호를 입력해주세요." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S9S-Qv-iOT">
+                                <rect key="frame" x="17.999999999999986" y="137" width="220.66666666666663" height="26.333333333333343"/>
+                                <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="전화번호를 입력해주세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ssr-a2-mwt">
+                                <rect key="frame" x="18" y="183.33333333333334" width="354" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="7dI-QH-APP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kkd-QB-aK4">
+                                <rect key="frame" x="18" y="255.33333333333337" width="354" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="uvT-14-Iz8"/>
+                                </constraints>
+                                <color key="tintColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="인증번호 전송">
+                                    <backgroundConfiguration key="background" cornerRadius="10">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="18"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="AccentColor"/>
+                        <constraints>
+                            <constraint firstItem="Kkd-QB-aK4" firstAttribute="top" secondItem="ssr-a2-mwt" secondAttribute="bottom" constant="20" id="7Yp-Zh-ImK"/>
+                            <constraint firstItem="ssr-a2-mwt" firstAttribute="top" secondItem="S9S-Qv-iOT" secondAttribute="bottom" constant="20" id="9Hl-0c-y6U"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Kkd-QB-aK4" secondAttribute="trailing" constant="18" id="JbW-VJ-XCg"/>
+                            <constraint firstItem="Kkd-QB-aK4" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="18" id="XCU-Nv-UwM"/>
+                            <constraint firstItem="ssr-a2-mwt" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="18" id="kGP-z4-zP0"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ssr-a2-mwt" secondAttribute="trailing" constant="18" id="pqz-TC-qzM"/>
+                            <constraint firstItem="S9S-Qv-iOT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="18" id="qQO-x9-Ubb"/>
+                            <constraint firstItem="S9S-Qv-iOT" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="90" id="y0Q-wC-eoU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="phoneTextField" destination="ssr-a2-mwt" id="AO4-xL-4nt"/>
+                        <outlet property="submitButton" destination="Kkd-QB-aK4" id="Ktn-NT-r7U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="105" y="-28"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
