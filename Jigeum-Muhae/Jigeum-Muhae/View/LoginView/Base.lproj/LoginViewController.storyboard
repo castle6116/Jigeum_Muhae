@@ -1,21 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cMs-kn-AQ3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wtV-eY-56A">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Pretendard-Black.ttf">
-            <string>Pretendard-Black</string>
-        </array>
-        <array key="Pretendard-Medium.ttf">
-            <string>Pretendard-Medium</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--LoginViewController-->
         <scene sceneID="tne-QT-ifu">
@@ -25,29 +17,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="a5g-cg-GCT">
-                                <rect key="frame" x="102.33333333333333" y="386" width="185.33333333333337" height="72.333333333333314"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="지금뭐해" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gOg-M0-fPX">
-                                        <rect key="frame" x="0.0" y="0.0" width="185.33333333333334" height="38.333333333333336"/>
-                                        <fontDescription key="fontDescription" name="Pretendard-Black" family="Pretendard" pointSize="32"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="지금 그 사람은 뭘 할까?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubh-4S-Xuk">
-                                        <rect key="frame" x="0.0" y="48.333333333333314" width="185.33333333333334" height="24"/>
-                                        <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="20"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="8La-Lt-eLO">
+                                <rect key="frame" x="105" y="344" width="180" height="70"/>
                                 <constraints>
-                                    <constraint firstItem="ubh-4S-Xuk" firstAttribute="centerX" secondItem="a5g-cg-GCT" secondAttribute="centerX" id="Gua-BE-i7N"/>
-                                    <constraint firstItem="gOg-M0-fPX" firstAttribute="centerX" secondItem="a5g-cg-GCT" secondAttribute="centerX" id="hdC-ft-VyO"/>
+                                    <constraint firstAttribute="height" constant="70" id="Rlg-Rx-bD8"/>
+                                    <constraint firstAttribute="width" constant="180" id="nVY-gG-Fba"/>
                                 </constraints>
-                            </stackView>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="md2-cw-hUT">
-                                <rect key="frame" x="18" y="758" width="354" height="52"/>
+                                <rect key="frame" x="20" y="454" width="350" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="AiF-hJ-X87"/>
                                 </constraints>
@@ -64,43 +42,44 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="AccentColor"/>
                         <constraints>
-                            <constraint firstItem="a5g-cg-GCT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1Zv-ek-4nB"/>
-                            <constraint firstItem="md2-cw-hUT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="18" id="3QC-FJ-Pfx"/>
-                            <constraint firstItem="a5g-cg-GCT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qN8-fa-B7x"/>
-                            <constraint firstItem="md2-cw-hUT" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="trm-rq-woa"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="md2-cw-hUT" secondAttribute="trailing" constant="18" id="val-kW-TjH"/>
+                            <constraint firstItem="md2-cw-hUT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="YuR-NJ-1fL"/>
+                            <constraint firstItem="8La-Lt-eLO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-43" id="ff4-R8-TOQ"/>
+                            <constraint firstItem="md2-cw-hUT" firstAttribute="top" secondItem="8La-Lt-eLO" secondAttribute="bottom" constant="40" id="h0M-Bf-hFd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="md2-cw-hUT" secondAttribute="trailing" constant="20" id="rrb-yq-tvy"/>
+                            <constraint firstItem="8La-Lt-eLO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tgK-q0-GcP"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Qhh-sa-BOF"/>
                     <connections>
-                        <outlet property="loginButton" destination="md2-cw-hUT" id="aAv-Ir-7Ri"/>
+                        <outlet property="loginButton" destination="md2-cw-hUT" id="dbU-49-SqD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1049.2307692307693" y="-34.123222748815166"/>
+            <point key="canvasLocation" x="1978.4615384615383" y="-34.123222748815166"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="5Jc-l3-Thu">
+        <scene sceneID="yYv-pr-9Rp">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="cMs-kn-AQ3" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="wtV-eY-56A" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jlW-dZ-zsA">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mpm-tF-O2v">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="f6s-h0-b52"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="LaJ-sV-JjH"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="taJ-tA-y6Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iBD-tT-7aK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="120" y="-34.123222748815166"/>
+            <point key="canvasLocation" x="1049.2307692307693" y="-34.123222748815166"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Logo" width="720" height="280"/>
         <namedColor name="AccentColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.97647058823529409" green="0.98431372549019602" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

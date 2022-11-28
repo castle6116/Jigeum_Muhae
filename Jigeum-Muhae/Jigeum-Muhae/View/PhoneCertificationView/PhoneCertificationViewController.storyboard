@@ -9,8 +9,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Pretendard-Bold.otf">
+        <array key="Pretendard-Bold.ttf">
             <string>Pretendard-Bold</string>
+        </array>
+        <array key="Pretendard-Medium.ttf">
+            <string>Pretendard-Medium</string>
         </array>
         <array key="Pretendard-Regular.otf">
             <string>Pretendard-Regular</string>
@@ -25,22 +28,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="전화번호를 입력해주세요." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S9S-Qv-iOT">
-                                <rect key="frame" x="17.999999999999986" y="137" width="220.66666666666663" height="26.333333333333343"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="전화번호를 입력해주세요." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S9S-Qv-iOT">
+                                <rect key="frame" x="17.999999999999993" y="137" width="120.33333333333331" height="52.666666666666657"/>
                                 <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="22"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="전화번호를 입력해주세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ssr-a2-mwt">
-                                <rect key="frame" x="18" y="183.33333333333334" width="354" height="52"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3oG-X1-jae">
+                                <rect key="frame" x="16" y="213.66666666666666" width="358" height="74.333333333333343"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="'-'를 제외한 전화번호를 입력해주세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ssr-a2-mwt">
+                                        <rect key="frame" x="0.0" y="0.0" width="358" height="52"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="52" id="7dI-QH-APP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" textContentType="tel"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="전화번호를 확인해주세요!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zjU-xs-aQ6">
+                                        <rect key="frame" x="0.0" y="60.000000000000036" width="120.33333333333333" height="14.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="12"/>
+                                        <color key="textColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="52" id="7dI-QH-APP"/>
+                                    <constraint firstAttribute="trailing" secondItem="ssr-a2-mwt" secondAttribute="trailing" id="6EW-5g-3Tc"/>
+                                    <constraint firstItem="ssr-a2-mwt" firstAttribute="leading" secondItem="3oG-X1-jae" secondAttribute="leading" id="cPG-5F-Ml4"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kkd-QB-aK4">
-                                <rect key="frame" x="18" y="255.33333333333337" width="354" height="52"/>
+                                <rect key="frame" x="18" y="312" width="354" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="uvT-14-Iz8"/>
                                 </constraints>
@@ -53,33 +71,45 @@
                                     <fontDescription key="titleFontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="18"/>
                                 </buttonConfiguration>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PointUpFace" translatesAutoresizingMaskIntoConstraints="NO" id="IFT-iL-hSr">
+                                <rect key="frame" x="0.0" y="73" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="GZR-H3-HzU"/>
+                                    <constraint firstAttribute="height" constant="60" id="Xbi-3Z-Ijp"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" name="AccentColor"/>
                         <constraints>
-                            <constraint firstItem="Kkd-QB-aK4" firstAttribute="top" secondItem="ssr-a2-mwt" secondAttribute="bottom" constant="20" id="7Yp-Zh-ImK"/>
-                            <constraint firstItem="ssr-a2-mwt" firstAttribute="top" secondItem="S9S-Qv-iOT" secondAttribute="bottom" constant="20" id="9Hl-0c-y6U"/>
+                            <constraint firstItem="3oG-X1-jae" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="5YK-Fc-XmQ"/>
+                            <constraint firstItem="Kkd-QB-aK4" firstAttribute="top" secondItem="3oG-X1-jae" secondAttribute="bottom" constant="24" id="DCF-a1-dmU"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Kkd-QB-aK4" secondAttribute="trailing" constant="18" id="JbW-VJ-XCg"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="3oG-X1-jae" secondAttribute="trailing" constant="16" id="VKq-9M-RkQ"/>
                             <constraint firstItem="Kkd-QB-aK4" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="18" id="XCU-Nv-UwM"/>
-                            <constraint firstItem="ssr-a2-mwt" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="18" id="kGP-z4-zP0"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ssr-a2-mwt" secondAttribute="trailing" constant="18" id="pqz-TC-qzM"/>
+                            <constraint firstItem="3oG-X1-jae" firstAttribute="top" secondItem="S9S-Qv-iOT" secondAttribute="bottom" constant="24" id="Y36-04-K9a"/>
+                            <constraint firstItem="IFT-iL-hSr" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="na5-Oi-dZn"/>
+                            <constraint firstItem="S9S-Qv-iOT" firstAttribute="top" secondItem="IFT-iL-hSr" secondAttribute="bottom" constant="4" id="nen-8m-S6m"/>
                             <constraint firstItem="S9S-Qv-iOT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="18" id="qQO-x9-Ubb"/>
                             <constraint firstItem="S9S-Qv-iOT" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="90" id="y0Q-wC-eoU"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="infoLabel" destination="S9S-Qv-iOT" id="yty-AV-ow0"/>
+                        <outlet property="phoneCheckLabel" destination="zjU-xs-aQ6" id="X65-cL-YUo"/>
                         <outlet property="phoneTextField" destination="ssr-a2-mwt" id="AO4-xL-4nt"/>
-                        <outlet property="submitButton" destination="Kkd-QB-aK4" id="Ktn-NT-r7U"/>
+                        <outlet property="submitButton" destination="Kkd-QB-aK4" id="cf3-Nv-OEE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="105" y="-28"/>
+            <point key="canvasLocation" x="104.61538461538461" y="-28.436018957345969"/>
         </scene>
     </scenes>
     <resources>
+        <image name="PointUpFace" width="60" height="60"/>
         <namedColor name="AccentColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.97647058823529409" green="0.98431372549019602" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

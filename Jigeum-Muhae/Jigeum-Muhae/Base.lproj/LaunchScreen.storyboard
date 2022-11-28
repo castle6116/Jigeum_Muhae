@@ -6,17 +6,8 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Pretendard-Black.ttf">
-            <string>Pretendard-Black</string>
-        </array>
-        <array key="Pretendard-Medium.ttf">
-            <string>Pretendard-Medium</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -26,33 +17,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tTD-px-Qxr">
-                                <rect key="frame" x="102.33333333333333" y="386" width="185.33333333333337" height="72.333333333333314"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="지금뭐해" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ar-F5-zVZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="185.33333333333334" height="38.333333333333336"/>
-                                        <fontDescription key="fontDescription" name="Pretendard-Black" family="Pretendard" pointSize="32"/>
-                                        <color key="textColor" name="AccentColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="지금 그 사람은 뭘 할까?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XrN-82-wXR">
-                                        <rect key="frame" x="0.0" y="48.333333333333314" width="185.33333333333334" height="24"/>
-                                        <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="20"/>
-                                        <color key="textColor" name="AccentColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="AgS-RM-FoM">
+                                <rect key="frame" x="105" y="344" width="180" height="70"/>
                                 <constraints>
-                                    <constraint firstItem="XrN-82-wXR" firstAttribute="centerX" secondItem="tTD-px-Qxr" secondAttribute="centerX" id="oJR-wn-Rer"/>
-                                    <constraint firstItem="8ar-F5-zVZ" firstAttribute="centerX" secondItem="tTD-px-Qxr" secondAttribute="centerX" id="to1-nm-1MR"/>
+                                    <constraint firstAttribute="height" constant="70" id="g8h-tD-DQv"/>
+                                    <constraint firstAttribute="width" constant="180" id="zph-Z1-1VJ"/>
                                 </constraints>
-                            </stackView>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="AccentColor"/>
                         <constraints>
-                            <constraint firstItem="tTD-px-Qxr" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="IpG-KM-fCZ"/>
-                            <constraint firstItem="tTD-px-Qxr" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="vhB-bW-S9b"/>
+                            <constraint firstItem="AgS-RM-FoM" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-43" id="3u9-75-akW"/>
+                            <constraint firstItem="AgS-RM-FoM" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="xib-y2-9Gd"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -62,11 +39,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Logo" width="180" height="70"/>
         <namedColor name="AccentColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.97647058823529409" green="0.98431372549019602" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

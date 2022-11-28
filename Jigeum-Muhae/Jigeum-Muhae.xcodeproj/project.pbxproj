@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		66AFEF0D98D67DD1A7900325 /* Pods_Jigeum_Muhae.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 617821A5026B63B6C1AE663F /* Pods_Jigeum_Muhae.framework */; };
+		DE49328428DD72EC0052275E /* CertificationNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE49328328DD72EC0052275E /* CertificationNumberViewController.swift */; };
+		DE49328628DD72F70052275E /* CertificationNumberViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE49328528DD72F70052275E /* CertificationNumberViewController.storyboard */; };
 		DE5F7E0428DB024F00EE72BF /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = DE5F7DFB28DB024F00EE72BF /* Pretendard-Medium.otf */; };
 		DE5F7E0528DB024F00EE72BF /* Pretendard-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = DE5F7DFC28DB024F00EE72BF /* Pretendard-ExtraLight.otf */; };
 		DE5F7E0628DB024F00EE72BF /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DE5F7DFD28DB024F00EE72BF /* Pretendard-Bold.otf */; };
@@ -41,6 +43,8 @@
 		133A0A7CBFB1322196893D88 /* Pods-Jigeum-Muhae.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jigeum-Muhae.release.xcconfig"; path = "Target Support Files/Pods-Jigeum-Muhae/Pods-Jigeum-Muhae.release.xcconfig"; sourceTree = "<group>"; };
 		617821A5026B63B6C1AE663F /* Pods_Jigeum_Muhae.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jigeum_Muhae.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6C381894A3C893478C605A0 /* Pods-Jigeum-Muhae.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jigeum-Muhae.debug.xcconfig"; path = "Target Support Files/Pods-Jigeum-Muhae/Pods-Jigeum-Muhae.debug.xcconfig"; sourceTree = "<group>"; };
+		DE49328328DD72EC0052275E /* CertificationNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificationNumberViewController.swift; sourceTree = "<group>"; };
+		DE49328528DD72F70052275E /* CertificationNumberViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CertificationNumberViewController.storyboard; sourceTree = "<group>"; };
 		DE5F7DFB28DB024F00EE72BF /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
 		DE5F7DFC28DB024F00EE72BF /* Pretendard-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraLight.otf"; sourceTree = "<group>"; };
 		DE5F7DFD28DB024F00EE72BF /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
@@ -93,6 +97,13 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		DE037C2629110A1A001D72E8 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		DE12FAF128DB032E00D0F4F9 /* otf */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +142,15 @@
 				DECB41A728DB13F300025779 /* UIStoryBoard+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DE49328228DD728D0052275E /* CertificationNumberViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DE49328328DD72EC0052275E /* CertificationNumberViewController.swift */,
+				DE49328528DD72F70052275E /* CertificationNumberViewController.storyboard */,
+			);
+			path = CertificationNumberViewController;
 			sourceTree = "<group>";
 		};
 		DE5F7DE828DB010D00EE72BF /* Font */ = {
@@ -186,6 +206,8 @@
 		DE6090A828DAFBE4002D26B5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DE037C2629110A1A001D72E8 /* New Group */,
+				DE49328228DD728D0052275E /* CertificationNumberViewController */,
 				DECB41A028DB0BF100025779 /* PhoneCertificationView */,
 				DECB419F28DB0BE300025779 /* LoginView */,
 			);
@@ -322,6 +344,7 @@
 				DED429F928DB03B4001C24A7 /* Pretendard-ExtraLight.ttf in Resources */,
 				DED429FA28DB03B4001C24A7 /* Pretendard-ExtraBold.ttf in Resources */,
 				DE60909B28DAFBC5002D26B5 /* LoginViewController.storyboard in Resources */,
+				DE49328628DD72F70052275E /* CertificationNumberViewController.storyboard in Resources */,
 				DED429FF28DB03B4001C24A7 /* Pretendard-Light.ttf in Resources */,
 				DE5F7E0428DB024F00EE72BF /* Pretendard-Medium.otf in Resources */,
 			);
@@ -376,6 +399,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE49328428DD72EC0052275E /* CertificationNumberViewController.swift in Sources */,
 				DECB41A628DB12B200025779 /* LoginViewController.swift in Sources */,
 				DE60909428DAFBC5002D26B5 /* AppDelegate.swift in Sources */,
 				DECB41A228DB0C2B00025779 /* PhoneCertificationViewController.swift in Sources */,

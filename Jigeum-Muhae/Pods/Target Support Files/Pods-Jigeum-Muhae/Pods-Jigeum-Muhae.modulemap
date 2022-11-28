@@ -1,6 +1,0 @@
-framework module Pods_Jigeum_Muhae {
-  umbrella header "Pods-Jigeum-Muhae-umbrella.h"
-
-  export *
-  module * { export * }
-}
