@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -28,65 +28,6 @@
                                 <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="J6A-x4-oSP">
-                                <rect key="frame" x="26" y="253.33333333333337" width="338" height="52"/>
-                                <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ae2-3x-BUq">
-                                        <rect key="frame" x="0.0" y="0.0" width="48" height="52"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="48" id="s0H-9q-YNS"/>
-                                            <constraint firstAttribute="height" constant="52" id="xMk-ry-hiW"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ElQ-6R-twW">
-                                        <rect key="frame" x="58" y="0.0" width="48" height="52"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="48" id="HcK-hc-cz4"/>
-                                            <constraint firstAttribute="height" constant="52" id="v4S-PN-buj"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HsP-p6-9ER">
-                                        <rect key="frame" x="116" y="0.0" width="48" height="52"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="48" id="iPj-wc-8VE"/>
-                                            <constraint firstAttribute="height" constant="52" id="tQs-nR-Lty"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tDH-FV-b4x">
-                                        <rect key="frame" x="174" y="0.0" width="48" height="52"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="52" id="60O-4L-lED"/>
-                                            <constraint firstAttribute="width" constant="48" id="aBX-2R-hpQ"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gES-eF-ZV2">
-                                        <rect key="frame" x="232" y="0.0" width="48" height="52"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="52" id="NLC-ML-UYN"/>
-                                            <constraint firstAttribute="width" constant="48" id="epK-7j-Tmc"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G5U-EX-nZK">
-                                        <rect key="frame" x="290" y="0.0" width="48" height="52"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="52" id="Ptw-0r-Wq9"/>
-                                            <constraint firstAttribute="width" constant="48" id="TaY-z4-kFm"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                </subviews>
-                            </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Victory" translatesAutoresizingMaskIntoConstraints="NO" id="gfP-el-qYo">
                                 <rect key="frame" x="0.0" y="107" width="60" height="60"/>
                                 <constraints>
@@ -98,22 +39,14 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" name="AccentColor"/>
                         <constraints>
-                            <constraint firstItem="J6A-x4-oSP" firstAttribute="leading" secondItem="shU-yz-1rM" secondAttribute="leading" id="CGg-Ba-b1w"/>
+                            <constraint firstItem="shU-yz-1rM" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="26" id="F1p-cc-G1m"/>
                             <constraint firstItem="gfP-el-qYo" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="Hdn-ri-G3X"/>
-                            <constraint firstItem="J6A-x4-oSP" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="TOj-Xh-VH9"/>
-                            <constraint firstItem="J6A-x4-oSP" firstAttribute="top" secondItem="shU-yz-1rM" secondAttribute="bottom" constant="20" id="blq-Yc-ZJi"/>
                             <constraint firstItem="shU-yz-1rM" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="124" id="cli-Me-9aU"/>
                             <constraint firstItem="shU-yz-1rM" firstAttribute="top" secondItem="gfP-el-qYo" secondAttribute="bottom" constant="4" id="udL-ZH-xBG"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="fiveTextField" destination="gES-eF-ZV2" id="4w2-hK-X7U"/>
-                        <outlet property="fourTextField" destination="tDH-FV-b4x" id="UyA-rf-cHc"/>
                         <outlet property="infoLabel" destination="shU-yz-1rM" id="AbQ-gb-Qew"/>
-                        <outlet property="oneTextField" destination="Ae2-3x-BUq" id="Yd2-Wx-mlY"/>
-                        <outlet property="sixTextField" destination="G5U-EX-nZK" id="ILd-x2-sdi"/>
-                        <outlet property="threeTextField" destination="HsP-p6-9ER" id="ob4-qH-zmy"/>
-                        <outlet property="twoTextField" destination="ElQ-6R-twW" id="t9C-XP-e3u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
